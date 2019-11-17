@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS story, users;
+
+CREATE TABLE story(
+    id SERIAL NOT NULL PRIMARY KEY,
+    id_user VARCHAR(10) NOT NULL,
+    question VARCHAR(500) NOT NULL,
+    answer VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE users(
+    id_user INT NOT NULL PRIMARY KEY
+);
